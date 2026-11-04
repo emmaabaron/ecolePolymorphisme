@@ -7,5 +7,9 @@ public class Ecole {
        personne = new ArrayList<Personne>();
     }
 
+    public void ajouterPersonne (Personne p){
+        personne.add(p);
+    }
+
 
 }

@@ -5,4 +5,8 @@ public abstract class Employes extends Personne{
         super(email, age, prenom, nom);
         Salaire = salaire;
     }
+
+    public int getSalaire(){
+        return Salaire;
+    }
 }

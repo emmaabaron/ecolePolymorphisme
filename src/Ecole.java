@@ -11,5 +11,11 @@ public class Ecole {
         personne.add(p);
     }
 
+    public void listerPersonne(){
+        for (Personne p : personne){
+            System.out.println("Nom :"+p.nom+" Prénom :"+p.prenom);
+            p.printDesc();
+        }
+    }
 
 }

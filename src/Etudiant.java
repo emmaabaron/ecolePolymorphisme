@@ -3,26 +3,23 @@ import java.util.ArrayList;
 public class Etudiant extends Personne {
     private ArrayList<String> listCours;
 
-    public Etudiant(String email, String age, String prenom, String nom) {
+    public Etudiant(String email, String age, String prenom, String nom,ArrayList<String> listCours) {
         super(email, age, prenom, nom);
-        this.listCours = new ArrayList<String> (listCours);
+        this.listCours = listCours;
     }
-
 
     public void AjouterCours(String c){
         listCours.add(c);
     }
 
-    public String  AfficherCours(){
-        System.out.println("Etudiant inscrit aux cours de : ");
-        for (String c : listCours){
-            System.out.println(c);
-        }
-        return "";
-    }
 
     @Override
     public String getRole() {
-        return AfficherCours();
+        String affCours ="Etudiant inscrit aux cours de : ";
+        for (int i =0; i<listCours.size();i++) {
+            affCours += listCours.get(i) + ",";
+        }
+        return affCours;
     }
+
 }

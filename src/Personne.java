@@ -15,8 +15,8 @@ public abstract class Personne {
         return (nom+", " +prenom +", "+age+ " ,"+email);
     }
 
-    public String printDesc(){
-        return (getBasDesc() + " - " + getRole()) ;
+    public void printDesc(){
+        System.out.println(getBasDesc() + " - " + getRole());
     }
     public abstract String getRole();
 }

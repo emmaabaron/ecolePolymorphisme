@@ -13,6 +13,6 @@ public class Cours {
     }
 
     public void definirEnseignant(){
-        
+
     }
 }
